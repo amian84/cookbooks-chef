@@ -1,0 +1,7 @@
+maintainer        "David Amian"
+maintainer_email  "damian@emergya.com"
+license           "GPL v2"
+description       "Cookbook to undo another applied recipe"
+version           "0.1.0"
+supports          "undorecipe"
+recipe            "undorecipe", "Cookbook to undo another applied recipe"
