@@ -5,6 +5,15 @@
 
 recipes = data_bag_item("test","recipes")
 
-include_recipe recipes[:recipe]
+puts recipes['recipe']
 
-recipes[:recipe].remove()
+test=recipes['recipe']  
+
+include_recipe test
+provider_dest=test.upcase + "_postremove"
+
+UNDORECIPE_postremove "remove" do
+    action :run
+        provider provider_dest
+end
+#
