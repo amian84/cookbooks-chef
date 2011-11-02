@@ -1,0 +1,7 @@
+maintainer        "David Amian"
+maintainer_email  "damian@emergya.com"
+license           "GPL v2"
+description       "Added bookmarks to your firefox-firma"
+version           "0.1.0"
+supports          "bookmarks"
+recipe            "bookmarks", "Added bookmarks to your firefox-firma"
