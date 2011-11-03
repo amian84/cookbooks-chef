@@ -6,9 +6,10 @@
 skel_sqlitefile = "/etc/skel/.mozilla/firefox/firefox-firma/places.sqlite"
 
 def add_bookmarks_to(sqlitefile)
-  BOOKMARKS_bookmarks sqlitefile do
+  BOOKMARKS_bookmarks "add_bookmark" do
+    sqlitedb sqlitefile
     bookmark_title node.bookmark_title
-    bookmark_url node.bookmark_node
+    bookmark_url node.bookmark_url
       action :add
         provider "BOOKMARKS_bookmarks"
   end
