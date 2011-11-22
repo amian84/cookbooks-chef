@@ -1,0 +1,7 @@
+maintainer        "David Amian"
+maintainer_email  "damian@emergya.com"
+license           "GPL v2"
+description       "Configure autostart applications in your system"
+version           "0.1.0"
+supports          "autostart"
+recipe            "autostart", "Configure autostart applications in your system"
