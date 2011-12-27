@@ -15,20 +15,28 @@ end
 attribute 'administrator_group/to_add',
   :display_name => "To add",
   :description  => "List of users to be added to admin group",
-  :type         => "array"
+  :type         => "array",
+  :required     => "required",
+  :recipes      => [ 'group_management::administrator_group' ]
 
 attribute 'administrator_group/to_remove',
   :display_name => "To remove",
   :description  => "List of users to be removed to admin group",
-  :type         => "array"
+  :type         => "array",
+  :required     => "required",
+  :recipes      => [ 'group_management::administrator_group' ]
 
 attribute 'base_groups/to_add',
   :display_name => "To add",
   :description  => "List of users to be added to defaults groups",
-  :type         => "array"
+  :type         => "array",
+  :required     => "required",
+  :recipes      => [ 'group_management::base_groups' ]
 
 attribute 'base_groups/to_remove',
   :display_name => "To remove",
   :description  => "List of users to be removed to defaults groups",
-  :type         => "array"
+  :type         => "array",
+  :required     => "required",
+  :recipes      => [ 'group_management::base_groups' ]
 
